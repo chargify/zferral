@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Klett"]
   s.date = %q{2011-01-27}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{A Ruby wrapper for the Zferral API, based on HTTParty.}
   s.email = %q{michael@webadvocate.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -37,13 +37,14 @@ Gem::Specification.new do |s|
     "spec/support/matchers/be.rb",
     "spec/vcr_cassettes/campaigns.yml",
     "spec/vcr_cassettes/events.yml",
-    "spec/zferral_spec.rb"
+    "spec/zferral_spec.rb",
+    "zferral.gemspec"
   ]
-  s.homepage = %q{http://github.com/moklett/zferral}
+  s.homepage = %q{http://github.com/grasshopperlabs/zferral}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{A Ruby wrapper for the Zferral API}
   s.test_files = [
     "spec/campaign_spec.rb",
     "spec/event_spec.rb",

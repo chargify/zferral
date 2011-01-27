@@ -13,10 +13,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "zferral"
-  gem.homepage = "http://github.com/moklett/zferral"
+  gem.homepage = "http://github.com/grasshopperlabs/zferral"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A Ruby wrapper for the Zferral API}
+  gem.description = %Q{A Ruby wrapper for the Zferral API, based on HTTParty.}
   gem.email = "michael@webadvocate.com"
   gem.authors = ["Michael Klett"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
