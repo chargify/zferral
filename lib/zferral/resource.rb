@@ -112,8 +112,8 @@ module Zferral
         case response.keys.first
         when resource_name
           resource = self.new(response[resource_name])
-          if resource.respond_to?(:error)
-            raise Zferral::ResourceError, resource.error
+          if response[resource_name]['error']
+            raise Zferral::ResourceError, response[resource_name]['error']
           end
           resource
         when 'error'
