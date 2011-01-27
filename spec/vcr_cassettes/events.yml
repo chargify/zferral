@@ -1,0 +1,148 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/event/call.json
+    body: "{\"event\":{\"debug\":\"1\",\"campaign_id\":1,\"revenue\":20.0,\"customer_id\":\"1\",\"affiliate_id\":538}}"
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      date: 
+      - Thu, 27 Jan 2011 19:11:21 GMT
+      content-length: 
+      - "30"
+      set-cookie: 
+      - cuid=8295b918f98f70f8d09511d9044ea543; expires=Wed, 01-Jan-2020 05:00:00 GMT; path=/; domain=sandbox.zferral.com
+      - zferral=8a0518ef003e7f83628a6c8d61b193c6; path=/
+    body: "{\"event\":{\"commission_sum\":2}}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/event/call.json
+    body: "{\"event\":{\"debug\":\"1\",\"revenue\":20.0,\"customer_id\":\"1\",\"affiliate_id\":538}}"
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Thu, 27 Jan 2011 19:11:22 GMT
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      content-length: 
+      - "45"
+      set-cookie: 
+      - zferral=ff098b069200835b71e4c38c5d203ef6; path=/
+    body: "{\"event\":{\"error\":\"Campaign ID is not set.\"}}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/event/call.json
+    body: "{\"event\":{\"debug\":\"1\"}}"
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      date: 
+      - Thu, 27 Jan 2011 19:11:23 GMT
+      content-length: 
+      - "45"
+      set-cookie: 
+      - zferral=e1f89862984eebf98420674e6c5dab82; path=/
+    body: "{\"event\":{\"error\":\"Campaign ID is not set.\"}}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/event/call.json
+    body: "{\"event\":{\"debug\":\"1\",\"campaign_id\":1,\"ignore_cookie\":\"1\",\"revenue\":20.0,\"customer_id\":\"1\"}}"
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Thu, 27 Jan 2011 19:11:24 GMT
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      content-length: 
+      - "30"
+      set-cookie: 
+      - cuid=8295b918f98f70f8d09511d9044ea543; expires=Wed, 01-Jan-2020 05:00:00 GMT; path=/; domain=sandbox.zferral.com
+      - zferral=239337692a5ea21deb195c8be0a6c1cf; path=/
+    body: "{\"event\":{\"commission_sum\":2}}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/event/call.json
+    body: "{\"event\":{\"debug\":\"1\",\"campaign_id\":1,\"ignore_cookie\":\"1\",\"revenue\":20.0,\"customer_id\":\"foobarjones\"}}"
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      date: 
+      - Thu, 27 Jan 2011 19:11:25 GMT
+      content-length: 
+      - "59"
+      set-cookie: 
+      - zferral=aea87a857d0d423d913c442d74935ede; path=/
+    body: "{\"event\":{\"error\":\"Neither cookie found nor referer set.\"}}"
+    http_version: "1.1"

@@ -1,0 +1,119 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/campaigns.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      date: 
+      - Thu, 27 Jan 2011 19:11:17 GMT
+      content-length: 
+      - "847"
+      set-cookie: 
+      - zferral=34cb69dbc3ea8dcee785cda0cc18e31e; path=/
+    body: "{\"campaigns\":[{\"id\":1,\"commission_type_id\":2,\"campaign_status_id\":1,\"event_id\":2,\"reward_points_type_id\":null,\"is_monetary\":true,\"is_private\":false,\"name\":\"Sample Revenue Share\",\"date_start\":\"2010-08-25\",\"date_end\":\"9999-12-01\",\"has_tiered_commission\":false,\"has_stepped_commission\":false,\"initial_commission\":\"10.00\",\"recurring_commission\":null,\"has_recurring_limited_by_renewals\":false,\"renewals_number\":null,\"has_recurring_limited_by_period\":false,\"recurring_end_date\":null,\"recurring_period_in_days\":null,\"has_simple_recurring_commissions\":false,\"has_auto_approval_commission\":true,\"commission_approved_callback_url\":null,\"description\":\"Refer a new customer, receive 10% of the revenue generated, for life.\",\"cookie_expire\":\"2010-11-25 00:00:00\",\"created_at\":\"2010-08-25 12:49:06\",\"landing_page_url\":\"http:\\/\\/zferral.com\",\"deleted_at\":null}]}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/campaign/1.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Thu, 27 Jan 2011 19:11:18 GMT
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      content-length: 
+      - "844"
+      set-cookie: 
+      - zferral=58c023f43ec7907beca9357e31b7ea5f; path=/
+    body: "{\"campaign\":{\"id\":1,\"commission_type_id\":2,\"campaign_status_id\":1,\"event_id\":2,\"reward_points_type_id\":null,\"is_monetary\":true,\"is_private\":false,\"name\":\"Sample Revenue Share\",\"date_start\":\"2010-08-25\",\"date_end\":\"9999-12-01\",\"has_tiered_commission\":false,\"has_stepped_commission\":false,\"initial_commission\":\"10.00\",\"recurring_commission\":null,\"has_recurring_limited_by_renewals\":false,\"renewals_number\":null,\"has_recurring_limited_by_period\":false,\"recurring_end_date\":null,\"recurring_period_in_days\":null,\"has_simple_recurring_commissions\":false,\"has_auto_approval_commission\":true,\"commission_approved_callback_url\":null,\"description\":\"Refer a new customer, receive 10% of the revenue generated, for life.\",\"cookie_expire\":\"2010-11-25 00:00:00\",\"created_at\":\"2010-08-25 12:49:06\",\"landing_page_url\":\"http:\\/\\/zferral.com\",\"deleted_at\":null}}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/campaign/1.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Thu, 27 Jan 2011 19:11:18 GMT
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      content-length: 
+      - "844"
+      set-cookie: 
+      - zferral=eca13fe9ab58c58ac2298a5bfbe56ce4; path=/
+    body: "{\"campaign\":{\"id\":1,\"commission_type_id\":2,\"campaign_status_id\":1,\"event_id\":2,\"reward_points_type_id\":null,\"is_monetary\":true,\"is_private\":false,\"name\":\"Sample Revenue Share\",\"date_start\":\"2010-08-25\",\"date_end\":\"9999-12-01\",\"has_tiered_commission\":false,\"has_stepped_commission\":false,\"initial_commission\":\"10.00\",\"recurring_commission\":null,\"has_recurring_limited_by_renewals\":false,\"renewals_number\":null,\"has_recurring_limited_by_period\":false,\"recurring_end_date\":null,\"recurring_period_in_days\":null,\"has_simple_recurring_commissions\":false,\"has_auto_approval_commission\":true,\"commission_approved_callback_url\":null,\"description\":\"Refer a new customer, receive 10% of the revenue generated, for life.\",\"cookie_expire\":\"2010-11-25 00:00:00\",\"created_at\":\"2010-08-25 12:49:06\",\"landing_page_url\":\"http:\\/\\/zferral.com\",\"deleted_at\":null}}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/campaign/9999999.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 404
+      message: Not Found
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      date: 
+      - Thu, 27 Jan 2011 19:11:19 GMT
+      content-length: 
+      - "46"
+      set-cookie: 
+      - zferral=3c862251ddc530dd6eada7f3e1d493a4; path=/
+      status: 
+      - 404 Not Found
+    body: "{\"error\":{\"code\":\"404\",\"message\":\"Not Found\"}}"
+    http_version: "1.1"

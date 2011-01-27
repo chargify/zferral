@@ -1,9 +1,19 @@
-= zferral
+= zferral API Ruby Wrapper
 
-Description goes here.
+Set your API credentials and obtain a Zferral instance
+
+    zferral = Zferral.new(:subdomain => "foo", :token => "bar")
+
+Then work with your resources through the instance:
+
+    zferral.campaign.all
+    # => [<#Zferral::Campaign campaign_status_id=1, commission_approved_callback_url=nil, ...>, ...]
+    
+    zferral.event.call(:campaign_id => 1, :revenue => 20.00, :affiliate_id => 300, :customer_id => "john@example.com")
+    # => <#Zferral::Event commission_sum=2>
 
 == Contributing to zferral
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
