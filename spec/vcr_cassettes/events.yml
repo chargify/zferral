@@ -146,3 +146,62 @@
       - zferral=aea87a857d0d423d913c442d74935ede; path=/
     body: "{\"event\":{\"error\":\"Neither cookie found nor referer set.\"}}"
     http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/event/call.json
+    body: "{\"event\":{\"affiliate_id\":538,\"debug\":\"1\",\"campaign_id\":1,\"revenue\":20.0,\"customer_id\":\"1\"}}"
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Thu, 27 Jan 2011 19:47:20 GMT
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      content-length: 
+      - "30"
+      set-cookie: 
+      - cuid=8295b918f98f70f8d09511d9044ea543; expires=Wed, 01-Jan-2020 05:00:00 GMT; path=/; domain=sandbox.zferral.com
+      - zferral=5567f5f61c1d97bae1435e22f80e8d3a; path=/
+    body: "{\"event\":{\"commission_sum\":2}}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://sandbox.zferral.com:443/api/c143c5450fb633c70c53b1bcc6348077/event/call.json
+    body: "{\"event\":{\"affiliate_id\":538,\"debug\":\"1\",\"revenue\":20.0,\"customer_id\":\"1\"}}"
+    headers: 
+      accept: 
+      - application/json
+      content-type: 
+      - application/json
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.17-0.dotdeb.0
+      content-type: 
+      - application/json; charset=utf-8
+      server: 
+      - Apache/2.2.9 (Debian) PHP/5.2.17-0.dotdeb.0 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+      date: 
+      - Thu, 27 Jan 2011 19:47:21 GMT
+      content-length: 
+      - "45"
+      set-cookie: 
+      - zferral=9a1d9025277bff7468e148f7b8d673e6; path=/
+    body: "{\"event\":{\"error\":\"Campaign ID is not set.\"}}"
+    http_version: "1.1"
