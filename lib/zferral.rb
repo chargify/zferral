@@ -3,7 +3,7 @@ require 'httparty'
 require 'json'
 require 'hashie'
 
-Dir[File.join(File.dirname(__FILE__), 'zferral', '**', '*.rb')].each {|f| require f}
+Dir[File.join(File.dirname(__FILE__), 'zferral', '**', '*.rb')].sort.each {|f| require f}
 
 module Zferral #:nodoc:
   # Creates a new API {Zferral::Client} with the passed arguments.
