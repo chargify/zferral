@@ -6,6 +6,7 @@ module Zferral
     format :json
     headers 'Content-Type' => 'application/json', 'Accept' => 'application/json'
     debug_output $stdout
+    default_timeout 15
     
     # Used to "connect" the resource to a Client already configured with credentials.
     #
